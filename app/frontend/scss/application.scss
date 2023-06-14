@@ -1,0 +1,47 @@
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+
+$theme-colors: (
+  "body-bg": #f5f5f5
+);
+
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  justify-content: center;
+}
+
+.content-table {
+  tr:nth-child(odd) {
+    background-color: $light;
+  }
+}
+
+.slide-enter-active {
+  animation: slide-in 0.5s;
+}
+
+.slide-leave-active {
+  animation: slide-in 0.5s reverse;
+}
+
+@keyframes slide-in {
+  0%{
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  75% {
+    transform: translateY(10%);
+    opacity: 100;
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}

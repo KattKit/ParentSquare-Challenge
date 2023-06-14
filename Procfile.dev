@@ -1,0 +1,4 @@
+
+vite: bundle exec vite dev
+web: bundle exec rails s
+jobs: bundle exec sidekiq

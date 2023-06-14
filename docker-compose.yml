@@ -1,0 +1,19 @@
+version: '3'
+services:
+  db:
+    image: postgres
+    environment:
+      # Provide the password via an environment variable. If the variable is unset or empty, use a default password
+      - POSTGRES_PASSWORD=${DB_PASSWORD:-V/OiVuWW5FrKrVAntxK6lWTEi5I6iWwE6npfes1RXh4aGtzzYhVsn5xF8iHAbooNTmiUaiwRK9Dz+8ICwdUDjw==}
+    ports:
+      - 5432:5432
+  redis:
+    image: redis:6.2-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    command: ["redis-server", "--appendonly", "yes"]
+    restart: always
+volumes:
+  redis-data:
