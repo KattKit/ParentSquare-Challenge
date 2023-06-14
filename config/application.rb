@@ -22,7 +22,7 @@ module ParentSquareInterviewTextingService
     # Only loads a smaller set of middleware suitable for API only apps.
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
-    config.hosts << "708e-2603-6010-c600-3a68-3521-9b78-b843-531f.ngrok-free.app"
+    config.hosts << "parent-square.herokuapp.com"
     config.active_job.queue_adapter = :sidekiq
     config.api_only = true
     config.middleware.use ActionDispatch::Flash
