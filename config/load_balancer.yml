@@ -1,4 +1,4 @@
-callback_url: https://708e-2603-6010-c600-3a68-3521-9b78-b843-531f.ngrok-free.app/webhook
+callback_url: https://parent-square.herokuapp.com/webhook
 servers:
   - name: :provider1
     url: https://mock-text-provider.parentsquare.com/provider1
