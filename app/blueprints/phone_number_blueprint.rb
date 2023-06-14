@@ -1,3 +1,3 @@
-class EventBlueprint < ApplicationBlueprint
+class PhoneNumberBlueprint < ApplicationBlueprint
   identifier :id
 end
